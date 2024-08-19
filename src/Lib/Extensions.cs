@@ -1,10 +1,9 @@
-using System;
 using System.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-namespace Lib;
+namespace FlintSoft.Endpoints;
 
 public static class Extensions
 {

@@ -1,7 +1,6 @@
-using System;
 using Microsoft.AspNetCore.Routing;
 
-namespace Lib;
+namespace FlintSoft.Endpoints;
 
 public interface IEndpoint
 {
