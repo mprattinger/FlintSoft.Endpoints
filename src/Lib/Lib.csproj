@@ -4,6 +4,17 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <PackageId>FlintSoft.Endpoints</PackageId>
+
+    <Authors>Michael Prattinger</Authors>
+    <Description>This package contains Extensions to help with minimal api endpoints</Description>
+    <PackageProjectUrl>https://github.com/mprattinger/FlintSoft.Endpoints</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <!-- A list of tags to help the search engine to understand the content of the package -->
+    <PackageTags>Minimal Api, Endpoints, library</PackageTags>
+
   </PropertyGroup>
 
   <ItemGroup>
