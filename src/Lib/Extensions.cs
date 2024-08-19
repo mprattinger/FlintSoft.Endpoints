@@ -1,5 +1,6 @@
 using System.Reflection;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
@@ -28,6 +29,17 @@ public static class Extensions
         foreach (var endpoint in endpoints)
         {
             endpoint.MapEndpoint(app);
+        }
+
+        return app;
+    }
+
+    public static IEndpointRouteBuilder MapEndpoints(this IEndpointRouteBuilder builder, WebApplication app) {
+        var endpoints = app.Services.GetRequiredService<IEnumerable<IEndpoint>>();
+
+        foreach (var endpoint in endpoints)
+        {
+            endpoint.MapEndpoint(builder);
         }
 
         return app;
